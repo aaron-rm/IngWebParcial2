@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Academia de Policia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Formulario de Ingreso a la Academia</h2>
+    </header>
+    <main>
+        <form action="validar.php" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required placeholder="ej. Juan Perez"><br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="0" max="150" required placeholder="ej. 22"><br><br>
+
+            <label for="estatura">Estatura (en metros):</label><br>
+            <input type="number" id="estatura" name="estatura" step="0.01" min="0.00" max="3.00" required placeholder="ej: 1.70"><br><br>
+
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+
+</body>
